@@ -1,0 +1,200 @@
+<?php
+include("conexion.php");
+
+$sql = "SELECT *  FROM datos";
+$query = mysqli_query($con, $sql);
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Registro Datos</title>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div class="contenedor">
+
+        <div class="contenedor-foto">
+
+            <div class="logo-nombre">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/hif/2/25/Newcastle_United_Logo.png" width="100" height="100">
+
+                <h1 class="nombre__letras">Daniel Rincón</h1>
+
+            </div>
+            <div class="foto-datos">
+                <img class="foto" src="img/sleyenda.png" width="200" height="220">
+
+
+
+                <table class="datos">
+                    <tr>
+                        <td><b class="item">Club:</b></td>
+                        <td><b class="datos-publicaciones">New Castle Ud.</b></td>
+                    </tr>
+                    <tr>
+                        <td><b class="item"> Dorsal:</b></td>
+                        <td><b class="datos-publicaciones">11</b></td>
+                    </tr>
+                    <tr>
+                        <td><b class="item">Altura:</b></td>
+                        <td><b class="datos-publicaciones">175 cm</b></td>
+                    </tr>
+                    <tr>
+                        <td><b class="item">Posiciones:</b></td>
+                        <td><b class="datos-publicaciones">II - SP - MP</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b class="item">Edad:</b></td>
+                        <td><b class="datos-publicaciones">18 años (19-02-1994)</b></td>
+                    </tr>
+                    <tr>
+                        <td><b class="item">Nacionalidad:</b></td>
+                        <td><b class="datos-publicaciones">Colombia</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="contenedor-formulario">
+
+
+            <h1>Ingreso de Datos</h1>
+
+            <form action="insertar.php" class="formulario" method="POST">
+                <label>Temporada</label>
+                <input type="text" class="cajas" name="temporada" placeholder="">
+                <label>Partidos</label>
+                <input type="text" class="cajas" name="partidos" placeholder="">
+                <label>Goles</label>
+                <input type="text" class="cajas" name="goles" placeholder="">
+                <label>Asistencias</label>
+                <input type="text" class="cajas" name="asistencias" placeholder="">
+                <label>T.Amarilla</label>
+                <input type="text" class="cajas" name="tarjetaa" placeholder="">
+                <label>T.Roja</label>
+                <input type="text" class="cajas" name="tarjetar" placeholder="">
+
+                <br>
+
+                <input type="submit" class="btn-primary" value="Guardar">
+            </form>
+
+        </div>
+
+
+        <div class="contenedor-registros">
+            <h1>Regístros</h1>
+
+
+
+            <table class="tabla tabla-datos div">
+
+                <tr>
+                    <th class="columna title">Temporada</th>
+                    <th class="columna title">Partidos</th>
+                    <th class="columna title">Goles</th>
+                    <th class="columna title">Asistencias</th>
+                    <th class="columna title">T.A</th>
+                    <th class="columna title">T.R</th>
+
+                    <th></th>
+                    <th></th>
+                </tr>
+
+
+                <tbody>
+                    <?php
+
+
+                    $sumPart = 0;
+                    $sumG = 0;
+                    $sumAsist = 0;
+                    $sumTa = 0;
+                    $sumTr = 0;
+
+                    while ($row = mysqli_fetch_assoc($query)) {
+
+
+                        $sumPart = $sumPart + intval($row['partidos']);
+
+                        $sumG = $sumG + intval($row['goles']);
+
+                        $sumAsist = $sumAsist + intval($row['asistencias']);
+                        $sumTa = $sumTa + $row['tarjetaa'];
+                        $sumTr = $sumTr + $row['tarjetar'];
+                    ?>
+                        <tr>
+                            <th class="columna campo"><?php echo $row['temporada'] ?></th>
+                            <th class="columna campo"><?php echo $row['partidos'] ?></th>
+                            <th class="columna campo"><?php echo $row['goles'] ?></th>
+                            <th class="columna campo"><?php echo $row['asistencias'] ?></th>
+                            <th class="columna campo"><?php echo $row['tarjetaa'] ?></th>
+                            <th class="columna campo"><?php echo $row['tarjetar'] ?></th>
+
+                            <th class=""><a class="link act" href="actualizar.php?id=<?php echo $row['temporada'] ?>">Editar</a></th>
+                            <th class=""><a class="link borr" href="delete.php?id=<?php echo $row['temporada'] ?>">Eliminar</a></th>
+                        </tr>
+                    <?php
+
+                    }
+                    ?>
+
+                    <tr>
+
+                        <th class="columna title">TOTAL</th>
+                        <th class="columna campo total "> <?php echo $sumPart; ?> </th>
+
+                        <th class="columna campo total"> <?php echo $sumG; ?> </th>
+                        <th class="columna campo total"> <?php echo $sumAsist; ?> </th>
+
+                        <th class="columna campo total"> <?php echo $sumTa; ?> </th>
+                        <th class="columna campo total"> <?php echo $sumTr; ?> </th>
+
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p class="p">Daniel F. Rincón - © 2023 - Todos los derechos reservados</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/dragonforce" target="_blank">
+                <img src="/iconos/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/dragonforce" target="_blank">
+                <img src="/iconos/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/dragonforcehq" target="_blank">
+                <img src="/iconos/insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/user/DragonForce" target="_blank">
+                <img src="/iconos/youtube.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="pagina-web">
+            <a href="https://as.com/meristation/2012/10/01/guia_pagina/1349086752_108704.html" target="_blank">www.serunaleyenda.com</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

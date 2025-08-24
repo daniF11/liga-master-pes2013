@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #a3a2a2cc; /* Gris */
+  color: #000; /* Negro */
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo__letras {
+  display: inline-block;
+  color: #2e2929;
+  font-size: 30px;
+}
+
+.botonReg{
+  margin: auto;
+  background-color: #007BFF;
+  color: #fff; 
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.botonReg:hover{
+  transform: translateY(-3px); 
+  transition: background-color 0.3s;
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+}
+
+hr {
+  width: 70%;
+  height: 1px;
+  background-color: rgb(76, 76, 76);
+}
+
+.title-reg{
+  font-size: 25px;
+}
+
+input {
+  margin: 10px 0 10px 0;
+  padding: 8px;
+  border: 2px solid #000; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px; 
+  color: #333; 
+}
+
+.btn-form {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-form:hover {
+  background-color: #0056b3; /* Azul oscuro */
+}
+
+.tabla{
+  margin:auto;
+  
+  overflow-x: auto; /* Para permitir el desplazamiento horizontal si la tabla es muy ancha */
+}
+
+
+thead {
+  background-color: #000; /* Azul agua marina */
+  color: #fff; /* Texto blanco */
+}
+
+.title {
+  background: #000;
+  color: #ffffff;
+}
+
+.total{
+  background: #007BFF;
+  color: #fff;
+}
+
+.columna {
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.campo {
+  background: #ffffff;
+}
+
+.mostrar {
+  display: none;
+}
+
+.ocultar {
+  display: none;
+}

@@ -1,0 +1,245 @@
+* {
+  background-color: #959595;
+  margin: auto;
+
+  font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+
+.contenedor {
+  margin-top: 20;
+
+  width: 700px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #959595;
+  
+}
+.contenedor-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-informacion {
+  padding: 5px;
+  width: 440px;
+}
+
+.logo-nombre {
+  display: flex;
+}
+
+.foto-datos {
+  display: flex;
+  margin-top: 30px;
+}
+
+.nombre__letras {
+  display: inline-block;
+
+  color: #2e2929;
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
+}
+
+.foto {
+  border-radius: 15%;
+}
+
+.datos {
+  border-radius: 10px;
+  background-color: #959595;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.datos__letras {
+  display: inline-block;
+  background-color: #959595;
+}
+
+.item {
+  font-family: "Staatliches", cursive;
+  font-size: 15px;
+  color: #c7c2c2;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.datos-publicaciones {
+  font-family: "Prompt", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.contenedor-formulario {
+  width: auto;
+}
+
+.formulario {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  width: 650px;
+  height: 150px;
+  padding: 15px; 
+}
+
+.btn-primary {
+  margin-top: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #ffffff;
+}
+
+.btn-primary:hover {
+  margin-top: 3px;
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  background: #000;
+  color: #1F8CDC;
+  transition: 0.5s;
+}
+
+.tabla-datos {
+  width: 600px;
+}
+.cajas {
+  width: 100px;
+  height: 15px;
+  padding: 10px;
+
+  margin: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+label {
+  background: #000;
+  color: #ffffff;
+}
+
+
+
+h1{
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.contenedor-registros {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.title {
+  background: #000;
+  color: #ffffff;
+}
+
+.columna {
+  padding: 15px;
+  border: 1px solid #000;
+}
+
+.campo {
+  background: #ffffff;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.act {
+  color: #1F8CDC;
+}
+
+.act:hover {
+  background: #000;
+  color: #ffffff;
+}
+.borr {
+  color: #767674;
+}
+
+.borr:hover {
+  background: #c7c2c2;
+  color: #b10b05;
+}
+
+.title-act {
+  color: #c7c2c2;
+}
+
+.form-act {
+  width: 140px;
+  margin: auto;
+}
+
+.btn-act {
+  margin-top: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: #ffffff;
+}
+
+.btn-act:hover {
+  margin-top: 3px;
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  background: #000;
+  color: #1F8CDC;
+  transition: 0.5s;
+}
+
+.total {
+  background: #706d6d;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.p, .redes-sociales, .pagina-web {
+  background-color: #000;
+}
+
+.redes-sociales a {
+  margin-right: 10px;
+  text-decoration: none;
+  margin: 10px;
+  background-color: #000;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+}
+
+.pagina-web a {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+}
+
+.pagina-web a:hover {
+  text-decoration: underline;
+}

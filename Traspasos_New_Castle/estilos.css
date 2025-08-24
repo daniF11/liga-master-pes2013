@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #a3a2a2cc; /* Gris */
+    color: #333; /* Negro */
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #000; /* Azul agua marina */  
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    width: 370px;   
+    margin: auto;  
+}
+
+
+.botonReg{
+  width: 120px;
+  margin: auto;
+  background-color: #007BFF;
+  color: #fff; 
+  padding: 10px;
+}
+
+.botonReg:hover{
+  transform: translateY(-3px); 
+  transition: background-color 0.3s;
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+}
+
+hr {
+  width: 70%;
+  height: 1px;
+  background-color: rgb(76, 76, 76);
+}
+
+form {
+    max-width: 370px;
+    margin: 0 auto;
+    background-color: white; /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: display 0.3s ease;
+}
+
+label,
+input,
+select,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+    width: calc(100% - 22px); /* Ancho del 100% menos el ancho del padding */
+    padding: 8px;
+    border: 2px solid #ccc; /* Azul agua marina */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+}
+
+input[type="date"] {
+    width: 100%; /* Ajusta el ancho al 100% */
+}
+
+button {
+    background-color: #007BFF; /* Azul agua marina */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul oscuro */
+}
+
+
+.contenedor-registros {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .title-reg{
+    float: left;
+  }
+
+  .title {
+    background: #000;
+    color: #ffffff;
+    
+  }
+
+  .total{
+    background: #007BFF;
+    color: #ffffff;
+  }
+  
+  .columna {
+    padding: 15px;
+    border: 1px solid #000;
+  }
+  
+  .campo {
+    background: #ffffff;
+  }
+
+  .mostrar {
+    display: none;
+  }
+  
+  .ocultar {
+    display: none;
+  }
+  
+
+

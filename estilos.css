@@ -1,0 +1,131 @@
+/* Estilos generales */
+ body {
+    background-color: #EAECEE; /* Fondo blanco */
+    color: #000; /* Texto negro */
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+
+
+header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.titulos{
+    margin-top: 25px;
+}
+
+.logoN{
+    margin-right: 30px;
+}
+
+.logoP{
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF; /* Azul, muy poco utilizado */
+    transition: color 0.3s; /* Transición suave */
+}
+
+a:hover {
+    color: #a3a2a2cc; /* Cambia de color al hacer hover */
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;   
+}
+
+/* Estilos para el contenido principal */
+.main-equipo, .main-jugadores {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja:hover{
+    transform: translateY(-5px); /* Levanta el div al hacer hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Añade sombra al hacer hover */
+}
+
+.caja1-equipo {
+    background-image: url('img/ResultadosE\ .jpg'); /* Ruta de la imagen para el lado izquierdo */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja2-equipo {
+    background-image: url('img/Galeria.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja3-equipo {
+    background-image: url('img/Transferencia1.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja4-equipo {
+    background-image: url('img/Fichajes.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja1-jugador {
+    background-image: url('img/Daniel.png'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja2-jugador {
+    background-image: url('img/Riviere.png'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja3-jugador {
+    background-image: url('ruta_de_la_imagen.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+.caja4-jugador {
+    background-image: url('ruta_de_la_imagen.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-size: cover; /* Ajustar la imagen al tamaño del div */
+}
+
+/* Estilos para el pie de página */
+footer {
+    margin-top: 35px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
