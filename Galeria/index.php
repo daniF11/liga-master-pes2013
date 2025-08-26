@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/estilo-galeria.css">
 </head>
 <body>
 
@@ -27,7 +27,7 @@
         <div class="image" style="background-image: url('imagen5.jpg')"></div>
     </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
     
 </body>
 </html>

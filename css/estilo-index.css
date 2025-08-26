@@ -82,32 +82,32 @@ header h2 {
 }
 
 .caja1-equipo {
-    background-image: url('img/ResultadosE\ .jpg'); /* Ruta de la imagen para el lado izquierdo */
+    background-image: url('../img/ResultadosE\ .jpg'); /* Ruta de la imagen para el lado izquierdo */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 
 .caja2-equipo {
-    background-image: url('img/Galeria.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-image: url('../img/Galeria.jpg'); /* Ruta de la imagen para el lado derecho */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 
 .caja3-equipo {
-    background-image: url('img/Transferencia1.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-image: url('../img/Transferencia1.jpg'); /* Ruta de la imagen para el lado derecho */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 
 .caja4-equipo {
-    background-image: url('img/Fichajes.jpg'); /* Ruta de la imagen para el lado derecho */
+    background-image: url('../img/Fichajes.jpg'); /* Ruta de la imagen para el lado derecho */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 
 .caja1-jugador {
-    background-image: url('img/Daniel.png'); /* Ruta de la imagen para el lado derecho */
+    background-image: url('../img/Daniel.png'); /* Ruta de la imagen para el lado derecho */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 
 .caja2-jugador {
-    background-image: url('img/Riviere.png'); /* Ruta de la imagen para el lado derecho */
+    background-image: url('../img/Riviere.png'); /* Ruta de la imagen para el lado derecho */
     background-size: cover; /* Ajustar la imagen al tamaño del div */
 }
 

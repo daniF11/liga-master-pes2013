@@ -16,7 +16,7 @@ $query2 = mysqli_query($con, $sql2);
 <head>
     <title> Registro Datos</title>
     <meta charset="UTF-8">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="../css/estilo-dani.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

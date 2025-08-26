@@ -15,7 +15,7 @@ $row=mysqli_fetch_array($query);
 <head>
   <title></title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/estilo-riviere.css">
 
   <title>Modify</title>
 
