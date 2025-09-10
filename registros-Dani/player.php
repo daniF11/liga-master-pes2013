@@ -153,8 +153,8 @@ $query2 = mysqli_query($con, $sql2);
                             <th class="columna campo"><?php echo $row['tarjetar'] ?></th>
 
                             <th class=""><a class="link act" href="actualizar.php?id=<?php echo $row['temporada'] ?>">Editar</a></th>
-                            <th class=""><a class="link borr" href="delete.php?id=<?php echo $row['temporada'] ?>">Eliminar</a></th>
-                            <th class=""><button id="reg" > Eliminar </th>
+                            <th class=""><a class="link borr reg" href="delete.php?id=<?php echo $row['temporada'] ?>">Eliminar</a></th>
+
                         </tr>
                     <?php
 
@@ -185,7 +185,7 @@ $query2 = mysqli_query($con, $sql2);
 
 
     <footer class="footer">
-        <p class="p">Daniel F. Rincón - © 2023 - Todos los derechos reservados</p>
+        <p class="p">iD-Force.com - © 2023 - Todos los derechos reservados</p>
         <div class="redes-sociales">
             <a href="https://vandal.elespanol.com/analisis/ps3/pro-evolution-soccer-2013/15432#p-41e" target="_blank">
                 Pro Evolution Soccer 2013
@@ -198,27 +198,28 @@ $query2 = mysqli_query($con, $sql2);
 
 <script>  
 
+document.querySelectorAll(".reg").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault(); // evita que vaya directo al href
+    let url = this.getAttribute("href");
 
-document.getElementById('reg').addEventListener('click', function() {
-                 Swal.fire({
-  title: "Estás seguro de eliminar el dato?",
-  text: "No podrás revertir el cambio!",
-  icon: "warning",
-  showCancelButton: true,
-  confirmButtonColor: "#3085d6",
-  cancelButtonColor: "#d33",
-  confirmButtonText: "Sí, borrar ésto!!"
-}).then((result) => {
-  if (result.isConfirmed) {
     Swal.fire({
-      title: "Dato eliminado!",
-      text: "Tu dato fue borrado.",
-      icon: "success"
+      title: "¿Estás seguro de eliminar el dato?",
+      text: "No podrás revertir el cambio!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, borrar esto!!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = url; // redirige a delete.php solo si confirma
+      }
     });
-  }
+  });
 });
 
-            });</script>
+    </script>
 </body>
 
 </html>

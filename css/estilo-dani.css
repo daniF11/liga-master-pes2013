@@ -159,7 +159,7 @@ h1{
 }
 
 .act {
-  color: #1F8CDC;
+  color: #0f5d94;
 }
 
 .act:hover {
@@ -170,9 +170,14 @@ h1{
   color: #767674;
 }
 
+.borr{
+  color: #000;
+}
+
 .borr:hover {
   background: #c7c2c2;
   color: #b10b05;
+  cursor: pointer;
 }
 
 .title-act {
